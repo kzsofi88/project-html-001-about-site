@@ -1,0 +1,125 @@
+i {
+    background-color: rgb(212, 200, 165);
+    width: 100px;
+    border: 10px solid rgb(37, 28, 16);
+    padding: 10px;
+    margin: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+html {
+    background-color: rgb(233, 160, 119); /* For browsers that do not support gradients */
+    background-image: linear-gradient(to right,rgb(92, 55, 30) , rgb(233, 160, 119));
+  }
+
+header {
+    font-size: large;
+    background-color: #1a0d05;
+    margin: 2px;
+    padding: 10px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+    margin: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(24, 9, 1);
+    margin: 2px;
+    background-color: rgb(167, 120, 89);
+    padding: 5px;
+}
+
+.links {
+    font-family: Arial, Helvetica, sans-serif;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(63, 39, 19);
+  }
+  
+li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+
+  img {
+      display: inline;
+      margin: 10px;
+      border: 1px solid;
+      box-shadow: 4px 6px;
+      box-shadow: 5px 10px 8px #111010
+  }
+
+button {
+    color: white;
+    background-color: rgb(22, 8, 0);
+    position: relative ;
+}
+
+.head1 {
+
+  display: inline-flex;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.par1 {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 300px;
+  line-height: 1.8;
+  display: inline-flex;
+  margin: 10px;
+
+}
+
+.img1 {
+  float: left;
+  display: inline-flex;
+  margin: 10px;
+
+}
+
+#pic {
+  display: block;
+}
+
+#aboutMe {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 400px;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+.myList {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+  line-height: 1.8;
+}
+
+#description {
+  margin: 20px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+#form1 {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 2.8;
+  background-color: rgb(212, 200, 165);
+ width: 300px;
+ border: 10px solid rgb(37, 28, 16);
+    padding: 10px;
+margin-bottom: 50px;
+}

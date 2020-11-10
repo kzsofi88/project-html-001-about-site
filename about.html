@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tortaműhely</title>
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+
+<body>
+
+    <header id="header">
+        <a href="/index.html"></a>
+        Tortaműhely
+    </header>
+
+    <nav id="menu">
+        <ul class="links">
+            <li>
+                <a href="/index.html">Home</a>
+            </li>
+            <li>
+                <a href="/works.html">Works</a>
+            </li>
+            <li>
+                <a href="/gallery.html">Gallery</a>
+            </li>
+            <li>
+                <a href="/about.html">About</a>
+            </li>
+        </ul>
+    </nav>
+    <section>
+        <p>Ki vagyok én?</p>
+    </section>
+    <main>
+        <img id="pic" src="assets\images\me.jpg" alt="me" width="400">
+    </main>
+    <div id="description">
+        <p id="aboutMe">
+            Zsófi vagyok, sok minden iránt érdeklődő, megfigyelő típus. Ha valamibe egyszer belekezdek, és igazán
+            érdekel, a legjobb tudásom szerint igyekszem véghezvinni. Ahogy az oldalon láthatod, szívesen hódolok a
+            kulináris élvezeteknek. Szeretek sütni és főzni, sokféle új dolgot kipróbálni.
+            <br>
+            Egyéb érdeklődési köreim közül néhány:
+        </p>
+        <ul class="myList">
+            <li>Természet - kirándulás, fotózás</li>
+            <br>
+            <li>Jóga, meditáció</li>
+            <br>
+            <li>Kreatív hobbik - festés, rajzolás, körmözés</li>
+            <br>
+            <li>Utazás - tájak, kultúrák, nyelvek</li>
+        </ul>
+        <br>
+        <p id="aboutMe"> Ha már a nyelveknél tartunk, az alábbi nyelvek tanulásába kóstoltam eddig bele baéamilyen
+            szinten, ebben a sorrendben:
+
+        </p>
+        <ol class="myList">
+            <li>Angol</li>
+            <br>
+            <li>Német</li>
+            <br>
+            <li>Finn</li>
+            <br>
+            <li>Svéd</li>
+            <br>
+            <li>Észt</li>
+            <br>
+            <li>Spanyol</li>
+        </ol>
+    </div>
+
+
+    <footer id="footer">
+        <div>
+            <p id="aboutMe">
+                Ha szeretnéd velem felvenni a kapcsolatot, itt megteheted:</p>
+            <form id="form1" action="/action_page.php" onsubmit="return validateForm()" method="post" required>
+                Név: <input type="text" name="fname" id="nev" value="" minlength="5" />
+                <br>
+                E-mail: <input type="text" name="email" id="email" value="" />
+                <br>
+                Üzenet: <textarea name="megjegyzes" id="megjegyzes" cols="30" rows="3" minlength="20"></textarea>
+                <br>
+                <input type="submit" value="küldés" />
+            </form>
+        </div>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    </footer>
+
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+        //Name validation
+        function validateForm() {
+            var x = document.forms["form1"]["fname"].value;
+            if (x == "") {
+                alert("Adatok megadása kötelező");
+                return false;
+            }
+        }
+    </script>
+
+</body>
+
+</html>

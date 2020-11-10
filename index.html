@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tortaműhely</title>
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+
+<body>
+
+    <header id="header">
+        <a href="/index.html"></a>
+        Tortaműhely
+    </header>
+
+    <nav id="menu">
+        <ul class="links">
+            <li>
+                <a href="/index.html">Home</a>
+            </li>
+            <li>
+                <a href="/works.html">Works</a>
+            </li>
+            <li>
+                <a href="/gallery.html">Gallery</a>
+            </li>
+            <li>
+                <a href="/about.html">About</a>
+            </li>
+        </ul>
+    </nav>
+
+    <section>
+        <p>Ez az oldal egy kedves hobbimról, a sütésről szól.</p>
+        <p>Az igazán jó tortákhoz pedig nem árt, ha az ember az alábbi tulajdonságokkal rendelkezik:</p>
+
+    </section>
+
+    <main>
+
+        <div>
+            <br>
+            <i>Türelem</i>
+            <i>Kreativitás</i>
+            <i>Precizitás</i>
+            <br>
+            
+        </div>
+
+<br>
+        <img src="assets/images/bakingtools2500.jpg" alt="baking tools" width="600">
+        <br>
+        <img src="assets\images\cake1.jpg" alt="cake" width="600">
+
+    </main>
+
+
+
+
+    <footer id="footer">
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    </footer>
+
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+</body>
+
+</html>
